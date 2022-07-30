@@ -1,4 +1,4 @@
-## LingYi: Medical Conversational Question Answering  System based on Knowledge Graphs
+## MedConQA: Medical Conversational Question Answering System based on Knowledge Graphs
 
 ###### 
 
