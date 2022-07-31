@@ -27,12 +27,17 @@
 ```
 python main.py --mode api --type Dagnosis --message 我肚子好疼
 ```
+
 <center><img src="image/Dagnosis.png" alt="img" style="zoom:50%;" /></center>
+
 ```
 python main.py --mode interactiv --type Dagnosis
 ```
+
 <center><img src="image/Triage.png" alt="img" style="zoom:50%;" /></center>
+
 ```
 python main.py --mode batch --type Summary --file_name input.csv --result_file_name result.csv
 ```
+
 <center><img src="image/Summary.png" alt="img" style="zoom:50%;" /></center>
