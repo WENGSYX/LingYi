@@ -4,8 +4,8 @@ from modeling_cpt import CPTForConditionalGeneration
 from Triage import *
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 FENZHEN_MODEL_NAME = 'WENGSYX/Dagnosis_Chinese_BERT'
-CMDD_MODEL_NAME = 'CPT'
-BL_MODEL_NAME = 'BLCPT'
+CMDD_MODEL_NAME = 'WENGSYX/Dagnosis_Chinese_CPT'
+BL_MODEL_NAME = 'WENGSYX/Dagnosis_Chinese_CPT'
 
 cmdd_model = CPTForConditionalGeneration.from_pretrained(CMDD_MODEL_NAME)
 cmdd_model = cmdd_model.to(device)
