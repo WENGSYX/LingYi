@@ -3,9 +3,9 @@ from transformers import AutoModelForSequenceClassification,BertTokenizer
 from .modeling_cpt import CPTForConditionalGeneration
 from Triage import *
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-FENZHEN_MODEL_NAME = 'fenzhen_BERT'
-CMDD_MODEL_NAME = 'CPT'
-BL_MODEL_NAME = 'BLCPT'
+FENZHEN_MODEL_NAME = 'WENGSYX/Dagnosis_Chinese_BERT'
+CMDD_MODEL_NAME = 'WENGSYX/Dagnosis_Chinese_CPT'
+BL_MODEL_NAME = 'WENGSYX/Dagnosis_Chinese_CPT'
 fenzhen_model = AutoModelForSequenceClassification.from_pretrained(FENZHEN_MODEL_NAME, num_labels=6).to(device)  # 模型
 fenzhen_tokenizer = BertTokenizer.from_pretrained(FENZHEN_MODEL_NAME)
 
